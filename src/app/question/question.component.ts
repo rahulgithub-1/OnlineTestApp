@@ -114,5 +114,14 @@ export class QuestionComponent implements OnInit {
     return this.progress;
   }
 
+  submit() {
+    this.isQuizCompleted = true;
+
+    if (this.currentQuestion == this.questionList.length) {
+      this.currentQuestion = this.questionList.length - 1;
+    }
+
+
+  }
 
 }
